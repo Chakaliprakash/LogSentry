@@ -1,0 +1,21 @@
+# Compiled class files
+bin/
+target/
+*.class
+
+# Log files (keep the small sample test log)
+*.log
+!sample_logs.log
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store

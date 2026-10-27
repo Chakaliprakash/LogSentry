@@ -1,3 +1,19 @@
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=venom&height=190&color=0:111827,50:334155,100:94a3b8&text=LogSentry&fontColor=ffffff&fontSize=40&fontAlignY=42&desc=Core%20Java%20%7C%20Concurrency%20%7C%20CLI&descAlignY=65&descSize=15" width="100%" alt="LogSentry banner"/>
+
+![Core%20Java](https://img.shields.io/badge/Core%20Java-Enabled-334155)
+![Multithreading](https://img.shields.io/badge/Multithreading-Project-0f766e)
+![Log%20Analysis](https://img.shields.io/badge/Log%20Analysis-Built%20with%20care-64748b)
+
+**Multithreaded log analyzer built with Core Java.**
+
+[Repository](https://github.com/Chakaliprakash/LogSentry) · [Issues](https://github.com/Chakaliprakash/LogSentry/issues)
+
+</div>
+
+---
+
 # LogSentry 🛡️
 > A multithreaded log analyzer and search engine built from scratch using Core Java.
 

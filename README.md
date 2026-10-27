@@ -13,25 +13,44 @@
 
 # LogSentry
 
-LogSentry is a Core Java log analyzer that uses multithreading to process large log files in parallel.
+LogSentry is a command-line log analysis tool written in Core Java. It uses a thread pool to search and summarize log files in parallel.
 
-## Key Features
+## Features
 
-- Splits log files into chunks for parallel processing.
-- Uses Java concurrency utilities to manage worker tasks.
-- Handles chunk boundaries when reading file data.
-- Compares single-threaded and multithreaded processing.
+- Search log entries by keyword.
+- Filter by log level such as `INFO`, `WARN`, `ERROR`, and `DEBUG`.
+- Search by error code.
+- Summarize log-level and error-code counts.
+- Compare single-threaded and multithreaded processing.
+- Generate sample log data for testing.
 
-## Concepts Demonstrated
+## Technology
 
-- `ExecutorService`
-- `Callable` and `Future`
-- Thread-safe result aggregation
-- File processing and performance measurement
+- Java 17
+- Maven
+- `ExecutorService`, `Future`, and concurrent result aggregation
 
-## Getting Started
+## Build
 
-Review the source files for the entry point and supported command-line arguments. Use a JDK compatible with the project configuration.
+```bash
+mvn package
+```
+
+## Run
+
+Start the interactive console:
+
+```bash
+java -jar target/logsentry-1.0.0.jar
+```
+
+To run a benchmark against a log file:
+
+```bash
+java -jar target/logsentry-1.0.0.jar --benchmark sample_logs.log 4 ERROR
+```
+
+The benchmark arguments are the file path, thread count, and search query. Generate a sample file from the interactive menu if one is not present.
 
 ## Author
 
